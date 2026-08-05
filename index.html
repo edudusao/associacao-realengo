@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Site oficial da Associação de Moradores de Realengo, Rio de Janeiro - RJ. Notícias, eventos, serviços e canal de contato para os moradores do bairro.">
+<meta name="author" content="Associação de Moradores de Realengo">
+<title>Associação de Moradores de Realengo | Rio de Janeiro - RJ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+<!-- ============ BARRA DE ACESSIBILIDADE ============ -->
+<div class="barra-acessibilidade" role="region" aria-label="Opções de acessibilidade">
+  <div class="container barra-acessibilidade__inner">
+    <span class="barra-acessibilidade__rotulo">Acessibilidade:</span>
+    <button type="button" id="btn-diminuir" class="btn-acess" aria-label="Diminuir tamanho da letra">A−</button>
+    <button type="button" id="btn-normal" class="btn-acess" aria-label="Restaurar tamanho normal da letra">A</button>
+    <button type="button" id="btn-aumentar" class="btn-acess" aria-label="Aumentar tamanho da letra">A+</button>
+    <button type="button" id="btn-contraste" class="btn-acess" aria-pressed="false" aria-label="Ativar ou desativar alto contraste">Alto contraste</button>
+  </div>
+</div>
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="cabecalho">
+  <div class="container cabecalho__inner">
+    <a class="logo" href="#inicio" aria-label="Página inicial da Associação de Moradores de Realengo">
+      <span class="logo__marca" aria-hidden="true">AMR</span>
+      <span class="logo__texto">
+        <strong>Associação de Moradores</strong>
+        <small>Realengo &middot; Rio de Janeiro / RJ</small>
+      </span>
+    </a>
+
+    <button type="button" class="menu-toggle" id="menu-toggle"
+            aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
+    <nav class="navegacao" aria-label="Menu principal">
+      <ul id="menu-principal" class="navegacao__lista">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">A Associação</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============ INÍCIO ============ -->
+  <section id="inicio" class="hero" aria-labelledby="titulo-hero">
+    <div class="container">
+      <h1 id="titulo-hero">Realengo mais perto de você</h1>
+      <p class="hero__texto">
+        Este é o canal digital da Associação de Moradores de Realengo. Aqui você encontra
+        as notícias do bairro, a agenda de reuniões e eventos, os serviços oferecidos à
+        comunidade e um caminho direto para falar com a associação — sem precisar sair de casa.
+      </p>
+      <div class="hero__acoes">
+        <a class="botao botao--primario" href="#contato">Falar com a associação</a>
+        <a class="botao botao--secundario" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ATALHOS RÁPIDOS ============ -->
+  <section class="atalhos" aria-label="Atalhos rápidos">
+    <div class="container atalhos__grade">
+      <a class="atalho" href="#noticias">
+        <span class="atalho__icone" aria-hidden="true">📰</span>
+        <span class="atalho__titulo">Notícias do bairro</span>
+        <span class="atalho__desc">Obras, avisos e informações oficiais</span>
+      </a>
+      <a class="atalho" href="#eventos">
+        <span class="atalho__icone" aria-hidden="true">📅</span>
+        <span class="atalho__titulo">Agenda de eventos</span>
+        <span class="atalho__desc">Reuniões, mutirões e atividades</span>
+      </a>
+      <a class="atalho" href="#servicos">
+        <span class="atalho__icone" aria-hidden="true">🤝</span>
+        <span class="atalho__titulo">Serviços à comunidade</span>
+        <span class="atalho__desc">Apoio, orientação e encaminhamentos</span>
+      </a>
+      <a class="atalho" href="#contato">
+        <span class="atalho__icone" aria-hidden="true">✉️</span>
+        <span class="atalho__titulo">Fale conosco</span>
+        <span class="atalho__desc">Envie sua dúvida, sugestão ou denúncia</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+    <div class="container">
+      <h2 id="titulo-sobre" class="secao__titulo">A Associação</h2>
+      <div class="sobre__grade">
+        <div>
+          <p>
+            A Associação de Moradores de Realengo é uma entidade civil, sem fins lucrativos,
+            que representa os moradores do bairro de Realengo, na Zona Oeste do Rio de Janeiro.
+            Sua atuação é voltada à melhoria da qualidade de vida local, à intermediação de
+            demandas junto ao poder público e à organização de ações comunitárias.
+          </p>
+          <p>
+            Historicamente, a comunicação com os moradores dependia de cartazes, do boca a boca
+            e de grupos de mensagens. Este site foi criado para que qualquer morador — inclusive
+            quem tem pouca familiaridade com tecnologia — encontre informação confiável e
+            centralizada, a qualquer hora, de graça e a partir do celular.
+          </p>
+        </div>
+        <div class="cartao-info">
+          <h3>Nossos pilares</h3>
+          <ul class="lista-marcada">
+            <li><strong>Representar</strong> os moradores junto aos órgãos públicos</li>
+            <li><strong>Informar</strong> com clareza e sem intermediários</li>
+            <li><strong>Mobilizar</strong> a comunidade em torno de melhorias no bairro</li>
+            <li><strong>Acolher</strong> demandas e encaminhá-las a quem pode resolver</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOTÍCIAS ============ -->
+  <section id="noticias" class="secao secao--alt" aria-labelledby="titulo-noticias">
+    <div class="container">
+      <h2 id="titulo-noticias" class="secao__titulo">Notícias do bairro</h2>
+      <p class="secao__subtitulo">Informações publicadas e conferidas pela associação.</p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card__tag">Infraestrutura</span>
+          <h3 class="card__titulo">Recapeamento da via principal entra em fase final</h3>
+          <p class="card__texto">
+            O serviço de recapeamento iniciado no mês passado alcançou o último trecho.
+            A associação acompanha a execução e registra as ocorrências relatadas pelos moradores.
+          </p>
+          <p class="card__meta"><time datetime="2026-07-28">28 de julho de 2026</time></p>
+        </article>
+
+        <article class="card">
+          <span class="card__tag">Saúde</span>
+          <h3 class="card__titulo">Campanha de vacinação na unidade de saúde do bairro</h3>
+          <p class="card__texto">
+            A unidade de saúde local ampliou o horário de atendimento para a campanha de vacinação.
+            Leve documento de identificação e a carteira de vacinação.
+          </p>
+          <p class="card__meta"><time datetime="2026-07-15">15 de julho de 2026</time></p>
+        </article>
+
+        <article class="card">
+          <span class="card__tag">Segurança</span>
+          <h3 class="card__titulo">Pedido de melhoria da iluminação pública é protocolado</h3>
+          <p class="card__texto">
+            A associação protocolou junto ao órgão responsável a solicitação de troca das
+            lâmpadas queimadas nas ruas indicadas pelos moradores durante a última reunião.
+          </p>
+          <p class="card__meta"><time datetime="2026-06-30">30 de junho de 2026</time></p>
+        </article>
+      </div>
+
+      <p class="aviso" role="note">
+        <strong>Como publicar uma notícia:</strong> as notícias são atualizadas diretamente no
+        arquivo <code>index.html</code>. Basta copiar um bloco <code>&lt;article class="card"&gt;</code>
+        existente, alterar o texto e a data, e enviar a alteração ao repositório.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ EVENTOS ============ -->
+  <section id="eventos" class="secao" aria-labelledby="titulo-eventos">
+    <div class="container">
+      <h2 id="titulo-eventos" class="secao__titulo">Agenda de eventos</h2>
+      <p class="secao__subtitulo">Participe: toda decisão do bairro passa por estas reuniões.</p>
+
+      <ul class="agenda">
+        <li class="agenda__item">
+          <div class="agenda__data" aria-hidden="true">
+            <span class="agenda__dia">12</span>
+            <span class="agenda__mes">AGO</span>
+          </div>
+          <div class="agenda__conteudo">
+            <h3>Assembleia mensal de moradores</h3>
+            <p><time datetime="2026-08-12T19:00">12 de agosto de 2026, às 19h</time> &middot; Sede da associação</p>
+            <p>Pauta: prestação de contas, obras em andamento e eleição da comissão de segurança.</p>
+          </div>
+        </li>
+        <li class="agenda__item">
+          <div class="agenda__data" aria-hidden="true">
+            <span class="agenda__dia">23</span>
+            <span class="agenda__mes">AGO</span>
+          </div>
+          <div class="agenda__conteudo">
+            <h3>Mutirão de limpeza da praça</h3>
+            <p><time datetime="2026-08-23T08:00">23 de agosto de 2026, às 8h</time> &middot; Praça do bairro</p>
+            <p>Traga luvas e sacos de lixo. A associação fornece as ferramentas maiores.</p>
+          </div>
+        </li>
+        <li class="agenda__item">
+          <div class="agenda__data" aria-hidden="true">
+            <span class="agenda__dia">05</span>
+            <span class="agenda__mes">SET</span>
+          </div>
+          <div class="agenda__conteudo">
+            <h3>Oficina de inclusão digital para idosos</h3>
+            <p><time datetime="2026-09-05T14:00">5 de setembro de 2026, às 14h</time> &middot; Sede da associação</p>
+            <p>Como usar o celular com segurança: mensagens, chamadas de vídeo e como reconhecer golpes.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section id="servicos" class="secao secao--alt" aria-labelledby="titulo-servicos">
+    <div class="container">
+      <h2 id="titulo-servicos" class="secao__titulo">Serviços à comunidade</h2>
+      <p class="secao__subtitulo">Atendimento gratuito aos moradores de Realengo.</p>
+
+      <div class="cards">
+        <article class="card card--servico">
+          <h3 class="card__titulo">Encaminhamento de demandas</h3>
+          <p class="card__texto">
+            Buracos na via, falta de iluminação, entulho e problemas de saneamento são
+            registrados e protocolados pela associação junto aos órgãos competentes.
+          </p>
+        </article>
+        <article class="card card--servico">
+          <h3 class="card__titulo">Orientação sobre documentos</h3>
+          <p class="card__texto">
+            Apoio para emissão de segunda via de documentos, acesso ao Gov.br e agendamento
+            de serviços públicos digitais.
+          </p>
+        </article>
+        <article class="card card--servico">
+          <h3 class="card__titulo">Declaração de residência</h3>
+          <p class="card__texto">
+            Emissão de declaração de residência para moradores que não possuem conta de
+            consumo em seu próprio nome.
+          </p>
+        </article>
+        <article class="card card--servico">
+          <h3 class="card__titulo">Espaço para reuniões</h3>
+          <p class="card__texto">
+            A sede pode ser cedida para atividades comunitárias, cursos e reuniões de grupos
+            do bairro, mediante solicitação prévia.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section id="contato" class="secao" aria-labelledby="titulo-contato">
+    <div class="container contato__grade">
+
+      <div>
+        <h2 id="titulo-contato" class="secao__titulo">Fale com a associação</h2>
+        <p class="secao__subtitulo">
+          Preencha o formulário abaixo. Todos os campos marcados com <span aria-hidden="true">*</span>
+          <span class="sr-only">asterisco</span> são obrigatórios.
+        </p>
+
+        <form id="form-contato" class="formulario" novalidate>
+          <div class="campo">
+            <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" autocomplete="name"
+                   aria-required="true" aria-describedby="erro-nome">
+            <span class="erro" id="erro-nome" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email"
+                   aria-required="true" aria-describedby="erro-email">
+            <span class="erro" id="erro-email" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel"
+                   placeholder="(21) 90000-0000" maxlength="15" aria-describedby="erro-telefone">
+            <span class="erro" id="erro-telefone" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="assunto">Assunto <span aria-hidden="true">*</span></label>
+            <select id="assunto" name="assunto" aria-required="true" aria-describedby="erro-assunto">
+              <option value="">Selecione uma opção</option>
+              <option value="reclamacao">Reclamação sobre o bairro</option>
+              <option value="sugestao">Sugestão de melhoria</option>
+              <option value="documento">Solicitação de documento</option>
+              <option value="evento">Dúvida sobre evento ou reunião</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+            <span class="erro" id="erro-assunto" role="alert"></span>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem <span aria-hidden="true">*</span></label>
+            <textarea id="mensagem" name="mensagem" rows="5" maxlength="600"
+                      aria-required="true" aria-describedby="erro-mensagem contador-mensagem"></textarea>
+            <span class="contador" id="contador-mensagem" aria-live="polite">0 de 600 caracteres</span>
+            <span class="erro" id="erro-mensagem" role="alert"></span>
+          </div>
+
+          <button type="submit" class="botao botao--primario botao--bloco">Enviar mensagem</button>
+
+          <div class="retorno" id="retorno-form" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <aside class="contato__dados" aria-labelledby="titulo-dados">
+        <h3 id="titulo-dados">Outros canais</h3>
+        <dl class="dados">
+          <dt>Endereço</dt>
+          <dd>Sede da Associação de Moradores<br>Realengo &middot; Rio de Janeiro / RJ</dd>
+
+          <dt>Atendimento presencial</dt>
+          <dd>Segunda a sexta, das 9h às 17h</dd>
+
+          <dt>Telefone</dt>
+          <dd>A ser informado pela associação</dd>
+
+          <dt>E-mail</dt>
+          <dd>A ser informado pela associação</dd>
+        </dl>
+
+        <div class="cartao-info cartao-info--destaque">
+          <h3>Precisa de ajuda para usar o site?</h3>
+          <p>
+            Procure a sede da associação em horário de atendimento. Um voluntário pode
+            ajudar você a navegar pelo site e enviar sua mensagem.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="rodape">
+  <div class="container rodape__inner">
+    <div>
+      <p class="rodape__titulo">Associação de Moradores de Realengo</p>
+      <p>Rio de Janeiro &middot; RJ &middot; Brasil</p>
+    </div>
+    <nav aria-label="Links do rodapé">
+      <ul class="rodape__links">
+        <li><a href="#sobre">A Associação</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <p class="rodape__creditos">
+      Site desenvolvido como Atividade Extensionista II do curso de Análise e
+      Desenvolvimento de Sistemas &mdash; Centro Universitário Internacional UNINTER.
+    </p>
+  </div>
+</footer>
+
+<button type="button" id="voltar-topo" class="voltar-topo" aria-label="Voltar ao topo da página">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
